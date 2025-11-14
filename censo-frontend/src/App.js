@@ -1,4 +1,14 @@
 import React, { useState, useEffect } from "react";
+import LandingPage from "./components/LandingPage";
+import Dashboard from "./components/Dashboard";
+function App() {
+  return (
+    <div>
+      <LandingPage />
+      <Dashboard /> {/* Aquí iría tu tabla y gráficos del censo */}
+    </div>
+  );
+}
 import {
   getDepartamentos,
   crearDepartamento,
@@ -109,6 +119,7 @@ function App() {
       </table>
     </div>
   );
+  
 }
 
 export default App;
